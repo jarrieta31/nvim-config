@@ -10,4 +10,5 @@ source $HOME/.config/nvim/plug-config/nerdtree.vim
 source $HOME/.config/nvim/plug-config/gruvbox.vim
 source $HOME/.config/nvim/plug-config/material.vim
 source $HOME/.config/nvim/plug-config/monokai.vim
+source $HOME/.config/nvim/plug-config/easymotion.vim
 

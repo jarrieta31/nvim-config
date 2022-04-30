@@ -26,6 +26,10 @@ Plug 'xolox/vim-misc'  " vim-session
 Plug 'xolox/vim-session' " vim-session
 Plug 'SirVer/ultisnips' " Snippets
 Plug 'honza/vim-snippets' " Snippets
+Plug 'tpope/vim-surround' " vim-surround  https://github.com/tpope/vim-surround
+" ***************************************************************************
+"    Plugins solo para neovim 
+" ******* Plugins solo para neovim ******************************************
 Plug 'nvim-lualine/lualine.nvim' " status bar lualine
 Plug 'kyazdani42/nvim-web-devicons' " iconos para status bar lualine
 
@@ -47,8 +51,6 @@ Plug 'jelera/vim-javascript-syntax'
 " cambiar el nombre de la etiqueta de cierre también.
 Plug 'andrewradev/tagalong.vim'
 
-" vim-surround  https://github.com/tpope/vim-surround
-Plug 'tpope/vim-surround'
 
 " python
 "Plug 'davidhalter/jedi-vim'
@@ -72,7 +74,6 @@ source ~/.config/nvim/local_bundles.vim
 endif
 
 call plug#end()
-
 
 "*****************************************************************************
 "" Basic Setup
@@ -113,14 +114,15 @@ colorscheme monokai " Tema de colores
 "*****************************************************************************
 "	Configuración para el uso de pliegues
 "*****************************************************************************
-"para realizar el plegado de forma automática. Por ejemplo, si queremos que 
+" Para realizar el plegado de forma automática. Por ejemplo, si queremos que 
 " la tecla espacio cree un pliegue con el texto seleccionado cuando estamos en 
-"modo visual y que además permita abrir y cerrar pliegues cuando estamos en 
-"modo normal
+" modo visual y que además permita abrir y cerrar pliegues cuando estamos en 
+" modo normal
+
 vmap <space> zf
 nmap <space> za
 " Personalizando los colores que los pliegues:
-"highlight Folded ctermfg=yellow ctermbg=gray guifg=yellow guibg=gray
+highlight Folded ctermfg=yellow ctermbg=gray guifg=yellow guibg=gray
 " Mostrar solo la primera línea del pliegue
 set foldtext=getline(v:foldstart)
 "    ***** Persistencia de los pliegues ******
@@ -130,6 +132,6 @@ set foldtext=getline(v:foldstart)
 " cuando salimos de Vim, y la cargan al editar de nuevo el mismo fichero.
 set foldmethod=manual
 set viewoptions=folds
-""" Save folds on exit and load them on edit
-autocmd BufWinLeave ?* mkview
-autocmd BufWinEnter ?* silent loadview 
+""" Guardar pliegues al salir y cargarlos al editar
+"autocmd BufWinLeave ?* mkview
+"autocmd BufWinEnter ?* silent loadview 
