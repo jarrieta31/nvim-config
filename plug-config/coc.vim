@@ -3,6 +3,7 @@
 "        Configuración predefinida de Conquer of Completion
 "*******************************************************************************
 "
+"g:coc_node_path = '/home/administrador/.nvm/versions/node/v14.18.1/bin/node'
 " TextEdit might fail if hidden is not set.
 set hidden
 
