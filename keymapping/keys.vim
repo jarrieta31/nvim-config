@@ -13,9 +13,13 @@ noremap <leader>fs :w!<cr>
 " Control S está chocando con una funcion de coc
 "noremap <C-S> :w!<CR> 
 
-" Salir sin   guardar
+" Salir sin guardar, igual que en Doom
 nmap <leader>q :q!<cr>
 "
-" Cambiar de buffers
+" Cambiar de buffers igual que en Doom
 nmap <leader>bn :bnext<CR>
 nmap <leader>bp :bprevious<CR>
+
+" Cambar de pestaña
+nmap <leader>tn :tabNext<CR>
+nmap <leader>tp :tabPrevious<CR>
