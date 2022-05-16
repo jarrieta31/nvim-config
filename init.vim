@@ -1,3 +1,28 @@
+set wrap
+set linebreak
+" par de opciones para hacer que la terminal se pinte cuando se necesite y para aprovechar las ventajas de las terminales rápidas.
+set lazyredraw  
+set ttyfast
+
+" Lo que hace es que cuando tienes puesto el editor que haga wrap de las líneas (que si hay una líena muy larga hace un salto de línea “virtual” el editor para que quepa en pantalla), al moverte por las líneas que han saltado puedas hacerlo como si fueran líneas normales.
+noremap <silent> <Up> gk  
+noremap <silent> <Down> gj 
+
+" La última opción es para que al buscar cosas en un fichero, cuando navegues a los resultados se borre el higlight, ya que me pone muy nervioso que se mantenga cuando ya he buscado algo.
+set nohlsearch     " clear highlight after a search
+
+nnoremap Y y$
+
+nnoremap n nzzzv 
+nnoremap N Nzzzv 
+nnoremap * *zzzv 
+
+" También tengo estos comandos para poder mover el cursor entre los splits abiertos a la vez en pantalla.
+
+map <C-h> <C-w>h 
+map <C-j> <C-w>j 
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 " Julio Arrieta
 "*****************************************************************************
 "" Vim-Plug core

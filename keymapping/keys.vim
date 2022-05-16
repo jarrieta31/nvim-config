@@ -10,6 +10,7 @@ imap jj <Esc>
 " Guardado rapido como  en doom emacs
 noremap <leader>fs :w!<cr>
 
+
 " Control S está chocando con una funcion de coc
 "noremap <C-S> :w!<CR> 
 

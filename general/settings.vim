@@ -8,7 +8,7 @@ set expandtab " convierte las tabulaciones a espacios. El nº de espacios será 
 set shiftwidth=4 " indica el nº de espacios para una indentación
 "set mouse=a " con esta opción cuando copiemos desde la terminal deslizando el ratón por el texto del fichero no se copiarán los números de línea.
 "set paste " nos servirá para hacer copy-paste en vim respetando tabulaciones y espacios del texto original.
-set nowrap
+"set nowrap
 set t_Co=256
 "set guifont=Meslo\ LG\ S\ 9
 "set guifont=Monaco\ Regular\ 10
