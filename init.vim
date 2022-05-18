@@ -29,6 +29,7 @@ map <C-l> <C-w>l
 "*****************************************************************************
 " Required:
 call plug#begin('~/.config/nvim/autoload/plugged')
+Plug 'preservim/nerdcommenter' " nerdcommenter es para comentar código
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'} "autocomletado Conquer of Completions
@@ -91,4 +92,5 @@ source $HOME/.config/nvim/plug-config/gruvbox.vim
 source $HOME/.config/nvim/plug-config/material.vim
 source $HOME/.config/nvim/plug-config/monokai.vim
 source $HOME/.config/nvim/plug-config/easymotion.vim
+source $HOME/.config/nvim/plug-config/nerdcommenter.vim
 
